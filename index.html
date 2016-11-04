@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Michael Goncharov</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            margin: 0;
+            height: 100vh;
+
+            font-size: 2rem;
+            color: hsl(30, 80%, 50%);
+            text-shadow: 1px 1px 2px #333;
+
+            background: #282828;
+            background-image: linear-gradient(-90deg, #7B7F82 2%, #303136 100%),
+            radial-gradient(50% 116%, rgba(255,255,255,0.00) 0%, rgba(0,0,0,0.50) 100%),
+            linear-gradient(-59deg, rgba(255,255,255,0.50) 7%, rgba(87,87,87,0.50) 68%, rgba(85,85,85,0.50) 76%, rgba(0,0,0,0.50) 100%);
+            background-blend-mode: normal,multiply,multiply;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #111;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        span {
+        font-size: 3rem;
+        animation-name: blink;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        }
+
+        span:nth-child(2) {
+        animation-delay: .2s;
+        }
+
+        span:nth-child(3) {
+        animation-delay: .4s;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: .2;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                opacity: .2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>My portfolio</h1>
+    <div>Still not much to boast of <span>(</span><span>(</span><span>(</span></div>
+</body>
+</html>
